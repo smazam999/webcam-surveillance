@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Surveillance</title>
+</head>
+<body>
+    <h1>Live Surveillance Feed</h1>
+    <img src="{{ url_for('video_feed') }}" width="720">
+    <h2>People In: {{ in_count }}</h2>
+    <h2>People Out: {{ out_count }}</h2>
+    <p>Last updated: {{ time.strftime("%Y-%m-%d %H:%M:%S") }}</p>
+</body>
+</html>
